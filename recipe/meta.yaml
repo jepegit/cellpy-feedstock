@@ -54,9 +54,9 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Extract and manipulate data from battery cell testers.'
+  summary: 'Extract and manipulate data from different battery cell testers.'
   description: |
-    Extract and manipulate data from battery cell testers.
+    Extract and manipulate data from different battery cell testers.
   doc_url: https://cellpy.readthedocs.io/
   dev_url: https://github.com/jepegit/cellpy
 
