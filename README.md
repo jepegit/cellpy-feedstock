@@ -7,13 +7,13 @@ Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cellpy-feedstock/blob/master/LICENSE.txt)
 
-Summary: Extract and manipulate data from battery cell testers.
+Summary: Extract and manipulate data from different battery cell testers.
 
 Development: https://github.com/jepegit/cellpy
 
 Documentation: https://cellpy.readthedocs.io/
 
-Extract and manipulate data from battery cell testers.
+Extract and manipulate data from different battery cell testers.
 
 
 Current build status

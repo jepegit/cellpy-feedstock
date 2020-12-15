@@ -1,5 +1,5 @@
 {% set name = "cellpy" %}
-{% set version = "0.4.0b1" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7efa6f922fac086f17418c46d6020cc1c22bd597c471b95058bace630ef4b969
+  sha256: 36e7050344f5dbd31a5684f847c256e10b2ec137efecefb853631e087bca6620
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
   run:
     - python >=3.6
     - numpy >=1.15
-    - xlrd >=1.2.0
+    - openpyxl >=3.0.5
     - matplotlib-base >=3.1.3
     - cryptography >=2.8
     - click >=7.1.1
@@ -54,9 +54,9 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Extract and manipulate data from battery cell testers.'
+  summary: 'Extract and manipulate data from different battery cell testers.'
   description: |
-    Extract and manipulate data from battery cell testers.
+    Extract and manipulate data from different battery cell testers.
   doc_url: https://cellpy.readthedocs.io/
   dev_url: https://github.com/jepegit/cellpy
 
