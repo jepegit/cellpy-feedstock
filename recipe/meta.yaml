@@ -1,5 +1,5 @@
 {% set name = "cellpy" %}
-{% set version = "0.4.1.a1" %}
+{% set version = "0.4.1a1" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - cellpy=cellpy.cli:cli
   script: "{{ PYTHON }} -m pip install . -vv"
