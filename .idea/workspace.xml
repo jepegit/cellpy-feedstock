@@ -25,12 +25,15 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:update_0_4_0" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85a68407-56cb-4865-baf0-6607e07c73db" name="Default Changelist" comment="update feedstock to v 0.4.0.b1" />
+    <list default="true" id="85a68407-56cb-4865-baf0-6607e07c73db" name="Default Changelist" comment="update feedstock to v 0.4.0.b1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe/meta.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/recipe/meta.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +42,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="update_0_4_0" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -94,7 +97,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="update_0_4_0" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -114,10 +117,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="update meta.yaml with new version number, sha, and requirement on openpyxl" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1608027353439">
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1608029045425">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680/-1920.-169.1920.1040@0.0.1280.680" timestamp="1608027353439" />
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680/-1920.-169.1920.1040@0.0.1280.680" timestamp="1608029045425" />
     <state x="-1180" y="92" key="FileChooserDialogImpl" timestamp="1606840697759">
       <screen x="-1920" y="-169" width="1920" height="1040" />
     </state>
@@ -126,9 +129,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.-169.1920.1040@0.0.1280.680" timestamp="1608027452085" />
-    <state x="458" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608026675523">
+    <state x="458" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608029066731">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="458" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680/-1920.-169.1920.1040@0.0.1280.680" timestamp="1608026675523" />
+    <state x="458" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680/-1920.-169.1920.1040@0.0.1280.680" timestamp="1608029066731" />
   </component>
 </project>
