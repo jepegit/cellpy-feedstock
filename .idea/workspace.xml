@@ -30,7 +30,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85a68407-56cb-4865-baf0-6607e07c73db" name="Default Changelist" comment="update feedstock to v 0.4.0.b1" />
+    <list default="true" id="85a68407-56cb-4865-baf0-6607e07c73db" name="Default Changelist" comment="update feedstock to v 0.4.0.b1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
