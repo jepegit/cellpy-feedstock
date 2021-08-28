@@ -1,5 +1,5 @@
 {% set name = "cellpy" %}
-{% set version = "0.4.1a4" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4ce3aee7550c843bc636aa15b2d474d1f65f4a8fe4f6b1dc65571c462b278440
+  sha256: 50e81b862f3fa6f0e6c01987478faa3a2a074393174ca0999a27d0c770eb4550
 
 build:
   noarch: python
   number: 0
   entry_points:
     - cellpy=cellpy.cli:cli
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -54,7 +54,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Extract and manipulate data from different battery cell testers.'
+  summary: Extract and manipulate data from different battery cell testers.
   description: |
     Extract and manipulate data from different battery cell testers.
   doc_url: https://cellpy.readthedocs.io/
