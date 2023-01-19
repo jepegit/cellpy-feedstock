@@ -30,7 +30,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85a68407-56cb-4865-baf0-6607e07c73db" name="Default Changelist" comment="update feedstock to v 0.4.2.a3" />
+    <list default="true" id="85a68407-56cb-4865-baf0-6607e07c73db" name="Default Changelist" comment="update .gitignore">
+      <change beforePath="$PROJECT_DIR$/recipe/meta.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/recipe/meta.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,6 +45,11 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/.gitignore" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/recipe/meta.yaml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
