@@ -43,7 +43,7 @@ requirements:
     - ipykernel >=5.1.4
     - pytables >=3.6.1
     - python-box >=4.2.2
-    - sqlalchemy <= 1.4.46
+    - sqlalchemy <=1.4.46
 
 test:
   imports:
