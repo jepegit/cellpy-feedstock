@@ -1,5 +1,5 @@
 {% set name = "cellpy" %}
-{% set version = "0.4.3a3" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3382bf74eefa04062eebf403cfc760278b727f893ee8f024846fe0e578dde28d
+  sha256: 445308d1057ef0cb426ddaa6e20a1429a30cf205c9742dd07cd329f66e9ce113
 
 build:
   noarch: python
@@ -18,11 +18,11 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - pip >=20.0.2
     - setuptools >=38.6.0
   run:
-    - python >=3.8
+    - python >=3.9
     - numpy >=1.15
     - openpyxl >=3.0.5
     - matplotlib-base >=3.1.3
