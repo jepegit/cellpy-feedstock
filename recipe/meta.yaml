@@ -43,7 +43,12 @@ requirements:
     - ipykernel >=5.1.4
     - pytables >=3.6.1
     - python-box >=4.2.2
-    - sqlalchemy <=1.4.46
+    - pint >=0.20.1
+    - plotly >=5.14.1
+    - sqlalchemy >=2.0.0
+    - python-dotenv >=1.0.0
+    - fabric >=3.0.0
+    - rich >=13.0.0
 
 test:
   imports:
