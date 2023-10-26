@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - cellpy=cellpy.cli:cli
   script: {{ PYTHON }} -m pip install . -vv
@@ -35,7 +35,6 @@ requirements:
     - setuptools >=67.7.2
     - ruamel.yaml >=0.17.21
     - pyodbc >=4.0.39
-    - PyGithub
     - cookiecutter >=2.1.1
     - tqdm >=4.65.0
     - lmfit >=1.2.0
@@ -48,7 +47,6 @@ requirements:
     - fabric >=3.0.0
     - rich >=13.5.1
     - dateparser >=1.1.8
-    - jinja2_time
 
 test:
   imports:
