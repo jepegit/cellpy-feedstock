@@ -1,5 +1,5 @@
 {% set name = "cellpy" %}
-{% set version = "1.0.0.post7" %}
+{% set version = "1.0.0post8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8ce753923c21984e7113206ae8e34e5ffd65090847d75df2a5cd80dde93cbe52
+  sha256: 2fa2173cf8be8de444627c352c1900fce0b443fd7a61d15162e76d3fdaee58f5
 
 build:
   noarch: python
@@ -32,7 +32,7 @@ requirements:
     - fabric>=3.0.0
     - hdf5>=1.14.0
     - lmfit>=1.2.0
-    - matplotlib>=3.7.1
+    - matplotlib-base >=3.7
     - numpy>=1.24.3
     - openpyxl>=3.1.1
     - pandas>=2.0.1
@@ -40,12 +40,8 @@ requirements:
     - pip>=23.1.2
     - pyodbc>=4.0.39
     - pytables>=3.8.0
-    - pytest>=7.3.1
-    - pytest-benchmark>=4.0.0
-    - pytest-timeout>=2.1.0
     - python-box>=7.0.1
     - python-dotenv>=1.0.0
-    - python>=3.9
     - rich>=13.5.1
     - ruamel.yaml>=0.17.21
     - scipy>=1.10.1
@@ -53,13 +49,14 @@ requirements:
     - sqlalchemy>=2.0.11
     - tqdm>=4.65.0
     - xlrd>=2.0.1
+    - pip:
+      - sqlalchemy-access>=2.0.1
 
 test:
   imports:
     - cellpy
   commands:
     - cellpy --help
-
 
 about:
   home: https://github.com/jepegit/cellpy
