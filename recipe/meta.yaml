@@ -1,5 +1,5 @@
 {% set name = "cellpy" %}
-{% set version = "1.0.0post8" %}
+{% set version = "1.0.0post9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2fa2173cf8be8de444627c352c1900fce0b443fd7a61d15162e76d3fdaee58f5
+  sha256: 80a4121e29e59d11b8a05a87654800aa2a11a002454a52da5c4d8be137418864
 
 build:
   noarch: python
@@ -23,34 +23,32 @@ requirements:
     - setuptools >=38.6.0
   run:
     - python >=3.9, <3.12
-    - PyGithub
-    - click>=8.1.3
-    - cookiecutter>=2.1.1
-    - coverage>=7.2.3
-    - cryptography>=40.0.2
-    - dateparser>=1.1.8
-    - fabric>=3.0.0
-    - hdf5>=1.14.0
-    - lmfit>=1.2.0
-    - matplotlib-base >=3.7
+    - pip>=23.1.2
     - numpy>=1.24.3
     - openpyxl>=3.1.1
+    - xlrd>=2.0.1
+    - matplotlib-base>=3.7.1
+    - cryptography>=40.0.2
+    - click>=8.1.3
+    - scipy>=1.10.1
     - pandas>=2.0.1
-    - pint>=0.20.1
-    - pip>=23.1.2
+    - setuptools>=67.7.2
+    - ruamel.yaml>=0.17.21
     - pyodbc>=4.0.39
+    - PyGithub
+    - cookiecutter>=2.1.1
+    - tqdm>=4.65.0
+    - lmfit>=1.2.0
+    - hdf5>=1.14.0
     - pytables>=3.8.0
     - python-box>=7.0.1
-    - python-dotenv>=1.0.0
-    - rich>=13.5.1
-    - ruamel.yaml>=0.17.21
-    - scipy>=1.10.1
-    - setuptools>=67.7.2
+    - pint>=0.20.1
     - sqlalchemy>=2.0.11
-    - tqdm>=4.65.0
-    - xlrd>=2.0.1
-    - pip:
-      - sqlalchemy-access>=2.0.1
+    - python-dotenv>=1.0.0
+    - fabric>=3.0.0
+    - rich>=13.5.1
+    - dateparser>=1.1.8
+    - jinja2_time
 
 test:
   imports:
