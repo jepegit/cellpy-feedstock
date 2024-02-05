@@ -45,7 +45,7 @@ requirements:
     - scipy >=1.12.0
     - setuptools >=69.0.3
     - sqlalchemy >=2.0.25
-    - sqlalchemy-access >=2.0.2
+    - sqlalchemy-access >=2.0.2  # [win]
     - tqdm >=4.66.1
     - xlrd >=2.0.1
     - ipykernel >=6.29.0
