@@ -1,5 +1,5 @@
 {% set name = "cellpy" %}
-{% set version = "1.0.0.post9" %}
+{% set version = "1.0.1.a5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 80a4121e29e59d11b8a05a87654800aa2a11a002454a52da5c4d8be137418864
+  sha256: e75ef66afc42d4d3bc0b74a5d985e9cd64d04fbe244bc7de68346aad91b9fa79
 
 build:
   noarch: python
@@ -23,30 +23,36 @@ requirements:
     - setuptools >=38.6.0
   run:
     - python >=3.9, <3.12
-    - pip >=23.1.2
-    - numpy >=1.24.3
-    - openpyxl >=3.1.1
+    - click >=8.1.7
+    - cookiecutter >=2.5.0
+    - cryptography >=42.0.2
+    - dateparser >=1.2.0
+    - fabric >=3.2.2
+    - hdf5 >=1.14.3
+    - lmfit >=1.2.2
+    - matplotlib-base >=3.8.2
+    - numpy >=1.26.3
+    - openpyxl >=3.1.2
+    - pandas >=2.2.0
+    - pint >=0.23
+    - pip >=24.0
+    - pyodbc >=5.0.1
+    - pytables >=3.9.2
+    - python-box >=7.1.1
+    - python-dotenv >=1.0.1
+    - rich >=13.7.0
+    - ruamel.yaml >=0.18.5
+    - scipy >=1.12.0
+    - setuptools >=69.0.3
+    - sqlalchemy >=2.0.25
+    - sqlalchemy-access >=2.0.2
+    - tqdm >=4.66.1
     - xlrd >=2.0.1
-    - matplotlib-base >=3.7.1
-    - cryptography >=40.0.2
-    - click >=8.1.3
-    - scipy >=1.10.1
-    - pandas >=2.0.1
-    - setuptools >=67.7.2
-    - ruamel.yaml >=0.17.21
-    - pyodbc >=4.0.39
-    - cookiecutter >=2.1.1
-    - tqdm >=4.65.0
-    - lmfit >=1.2.0
-    - hdf5 >=1.14.0
-    - pytables >=3.8.0
-    - python-box >=7.0.1
-    - pint >=0.20.1
-    - sqlalchemy >=2.0.11
-    - python-dotenv >=1.0.0
-    - fabric >=3.0.0
-    - rich >=13.5.1
-    - dateparser >=1.1.8
+    - ipykernel >=6.29.0
+    - ipython >=8.21.0
+    - ipywidgets >=8.1.1
+    - plotly >=5.18.0
+    - pygithub >=2.2.0
 
 test:
   imports:
