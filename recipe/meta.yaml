@@ -54,7 +54,6 @@ requirements:
     - pygithub >=2.2.0
     - __linux
     - __win
-    - sqlalchemy-access >=2.0.2
 
 test:
   imports:
