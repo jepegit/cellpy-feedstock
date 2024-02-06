@@ -1,5 +1,5 @@
 {% set name = "cellpy" %}
-{% set version = "1.0.1.a5" %}
+{% set version = "1.0.1a5" %}
 
 package:
   name: {{ name|lower }}
