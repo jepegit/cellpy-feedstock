@@ -52,7 +52,6 @@ requirements:
     - ipywidgets >=8.1.1
     - plotly >=5.18.0
     - pygithub >=2.2.0
-    - __win
     - sqlalchemy-access >=2.0.2
 
 test:
