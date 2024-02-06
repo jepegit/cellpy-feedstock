@@ -27,29 +27,29 @@ requirements:
   run:
     - python
     - click
-    - cookiecutter >=2.5.0
-    - fabric >=3.2.2
-    - hdf5 >=1.14.3
-    - lmfit >=1.2.2
-    - matplotlib-base >=3.8.2
-    - numpy >=1.26.3
-    - openpyxl >=3.1.2
-    - pandas >=2.2.0
-    - pint >=0.23
-    - pip
-    - pyodbc >=5.0.1
-    - pytables >=3.9.2
-    - python-box >=7.1.1
+    - cookiecutter >=2.1
+    - fabric >=3.1
+    - hdf5 >=1.14
+    - lmfit >=1.2
+    - matplotlib-base >=3.7
+    - numpy >=1.24
+    - openpyxl >=3.1.1
+    - pandas >=2.0.1
+    - pint >=0.20
+    - pip >=23.1
+    - pyodbc >=4.0
+    - pytables >=3.8
+    - python-box >=7.0
     - python-dotenv >=1.0.1
-    - rich >=13.7.0
-    - ruamel.yaml >=0.18.5
-    - scipy >=1.12.0
-    - setuptools >62
-    - sqlalchemy >=2.0.25
-    - tqdm >=4.66.1
+    - rich >=13.5
+    - ruamel.yaml >=0.17.21
+    - scipy >=1.10.1
+    - setuptools >=67.7
+    - sqlalchemy >=2.0.11
+    - tqdm >=4.65
     - xlrd >=2.0.1
     - ipykernel >=6.29.0
-    - ipython >=8.21.0
+    - ipython >=8.18.1
     - ipywidgets >=8.1.1
     - plotly >=5.18.0
     - pygithub >=2.2.0
