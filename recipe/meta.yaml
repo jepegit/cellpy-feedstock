@@ -20,7 +20,7 @@ requirements:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
-    - python >=3.9, <3.12
+    - python
     - pip >=20.0.2
     - setuptools >=38.6.0
   run:
