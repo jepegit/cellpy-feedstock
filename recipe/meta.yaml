@@ -24,7 +24,7 @@ requirements:
     - pip >=20.0.2
     - setuptools >=38.6.0
   run:
-    - python >=3.9, <3.12
+    - python
     - click >=8.1.7
     - cookiecutter >=2.5.0
     - cryptography >=42.0.2
