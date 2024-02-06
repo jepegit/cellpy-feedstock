@@ -1,7 +1,6 @@
 build_platform:
-  linux_aarch64: linux_64
-  linux_ppc64le: linux_64
-  osx_arm64: osx_64
+  linux_64: linux_64
+  win_64: win_64
 conda_forge_output_validation: true
 bot:
   automerge: true
@@ -10,8 +9,3 @@ github:
   tooling_branch_name: main
 conda_build:
   pkg_format: '2'
-provider:
-  win: appveyor
-noarch_platforms:
-  - linux_64
-  - win_64

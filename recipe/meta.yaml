@@ -1,5 +1,6 @@
 {% set name = "cellpy" %}
-{% set version = "1.0.1a5" %}
+{% set version = "1.0.1a6" %}
+
 
 package:
   name: {{ name|lower }}
@@ -7,50 +8,48 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e75ef66afc42d4d3bc0b74a5d985e9cd64d04fbe244bc7de68346aad91b9fa79
+  sha256: ada1885791347915bbdd9c65cbc32e9cf9e03c1ac2a6de8841deeb1ea0a2b988
 
 build:
   number: 0
+  skip: true  # [py<39 or py>311]
   entry_points:
     - cellpy=cellpy.cli:cli
-  script: {{ PYTHON }} -m pip install . -vv --no-deps
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   build:
-    - python                                 # [build_platform != target_platform]
-    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+    - python
   host:
     - python
-    - pip >=20.0.2
-    - setuptools >=38.6.0
+    - pip
+    - setuptools >62
   run:
     - python
-    - click >=8.1.7
-    - cookiecutter >=2.5.0
-    - cryptography >=42.0.2
-    - dateparser >=1.2.0
-    - fabric >=3.2.2
-    - hdf5 >=1.14.3
-    - lmfit >=1.2.2
-    - matplotlib-base >=3.8.2
-    - numpy >=1.26.3
-    - openpyxl >=3.1.2
-    - pandas >=2.2.0
-    - pint >=0.23
-    - pip >=24.0
-    - pyodbc >=5.0.1
-    - pytables >=3.9.2
-    - python-box >=7.1.1
+    - click
+    - cookiecutter >=2.1
+    - fabric >=3.1
+    - hdf5 >=1.14
+    - lmfit >=1.2
+    - matplotlib-base >=3.7
+    - numpy >=1.24
+    - openpyxl >=3.1.1
+    - pandas >=2.0.1
+    - pint >=0.20
+    - pip >=23.1
+    - pyodbc >=4.0
+    - pytables >=3.8
+    - python-box >=7.0
     - python-dotenv >=1.0.1
-    - rich >=13.7.0
-    - ruamel.yaml >=0.18.5
-    - scipy >=1.12.0
-    - setuptools >=69.0.3
-    - sqlalchemy >=2.0.25
-    - tqdm >=4.66.1
+    - rich >=13.5
+    - ruamel.yaml >=0.17.21
+    - scipy >=1.10.1
+    - setuptools >=67.7
+    - sqlalchemy >=2.0.11
+    - tqdm >=4.65
     - xlrd >=2.0.1
     - ipykernel >=6.29.0
-    - ipython >=8.21.0
+    - ipython >=8.18.1
     - ipywidgets >=8.1.1
     - plotly >=5.18.0
     - pygithub >=2.2.0
