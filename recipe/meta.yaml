@@ -12,7 +12,7 @@ source:
 
 build:
   number: 0
-  skip: true  # [py<3.9 or py>3.11]
+  skip: true  # [py<39 or py>311]
   entry_points:
     - cellpy=cellpy.cli:cli
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
