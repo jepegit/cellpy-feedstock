@@ -1,5 +1,5 @@
 {% set name = "cellpy" %}
-{% set version = "1.0.1a6" %}
+{% set version = "1.0.1b1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ada1885791347915bbdd9c65cbc32e9cf9e03c1ac2a6de8841deeb1ea0a2b988
+  sha256: 0bc5f66351449e74c2d7a65aa0f43b57e102774a7827590c1a18b9be928f3115
 
 build:
   number: 0
@@ -51,6 +51,7 @@ requirements:
     - ipykernel >=6.29.0
     - ipython >=8.18.1
     - ipywidgets >=8.1.1
+    - jupyterlab >=4.1
     - plotly >=5.18.0
     - pygithub >=2.2.0
     - sqlalchemy-access >=2.0.2  # [win]
