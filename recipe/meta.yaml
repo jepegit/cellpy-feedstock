@@ -67,7 +67,7 @@ about:
   home: https://github.com/jepegit/cellpy
   license: MIT
   license_family: MIT
-  license_file: LICENSE
+  license_file: LICENSE.md
   summary: Extract and manipulate data from different battery cell testers.
   description: |
     Extract and manipulate data from different battery cell testers.
