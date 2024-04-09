@@ -1,5 +1,5 @@
 {% set name = "cellpy" %}
-{% set version = "1.0.1b5" %}
+{% set version = "1.0.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1abb82c44fa9f6b9b16eef1dd616fa3cb03395902ea3d3033ea68f46b370d199
+  sha256: 815741d49c4f4e89d7686a316cfa1ffcaffee92dd3d38fc16c7226fa75d18fd8
 
 build:
   number: 0
