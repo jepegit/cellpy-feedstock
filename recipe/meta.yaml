@@ -1,7 +1,6 @@
 {% set name = "cellpy" %}
 {% set version = "1.0.2" %}
 
-
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -11,7 +10,7 @@ source:
   sha256: 968d8ca2b031933d0c0501e791645a4b28b7802c069a1ae7de45507acc510e2f
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<310 or py>313]
   entry_points:
     - cellpy=cellpy.cli:cli
