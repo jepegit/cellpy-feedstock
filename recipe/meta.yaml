@@ -6,9 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  # Wheel avoids hatchling/uv-dynamic-versioning needing a git checkout.
-  url: https://pypi.org/packages/py3/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}-py3-none-any.whl
-  sha256: bb5b530a7becd9f513a2f7b961c9b1d9bda50bfc2495f42afbfec5225e17b05d
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 2c0468f875077a0c799675f96973e7f7eba74727a358de10faff68b08a2c3a74
 
 build:
   number: 0
@@ -16,16 +15,18 @@ build:
   skip: true  # [py<313]
   entry_points:
     - cellpy=cellpy.cli:cli
-  script: {{ PYTHON }} -m pip install {{ name }}-{{ version }}-py3-none-any.whl -vv --no-deps --no-build-isolation
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
     - python
     - pip
+    # build-system from pyproject.toml (linter wants an explicit backend)
+    - hatchling >=1.27
+    - uv-dynamic-versioning >=0.7.0
   run:
     - python
     # PyPI [project.dependencies] (conda names)
-    # NOTE: requires cellpycore on conda-forge first (see staged-recipes draft).
     - cellpycore ==0.2.1
     - charset-normalizer
     - click
@@ -67,7 +68,8 @@ requirements:
     - jupyterlab >=4.1
     - lmfit >=1.2
     - plotly >=5.18.0
-    - python-kaleido >0.1.0
+    - python-kaleido >=0.1.0,<1.4
+    - seaborn
     - xlrd >=2.0.1
 
 test:
@@ -82,7 +84,7 @@ about:
   home: https://github.com/jepegit/cellpy
   license: MIT
   license_family: MIT
-  license_file: {{ name }}-{{ version }}.dist-info/licenses/LICENSE.md
+  license_file: LICENSE.md
   summary: Extract and manipulate data from different battery cell testers.
   description: |
     Extract and manipulate data from different battery cell testers.
