@@ -1,5 +1,5 @@
 {% set name = "cellpy" %}
-{% set version = "1.0.3" %}
+{% set version = "1.1.0.post1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,60 +7,78 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e6b5033c54b0ded6653da1601262bc11720e1c0b1d4e1b45839b719a51656332
+  sha256: 2c0468f875077a0c799675f96973e7f7eba74727a358de10faff68b08a2c3a74
 
 build:
   number: 0
-  skip: true  # [py<310 or py>313]
+  # cellpy requires-python >=3.13
+  skip: true  # [py<313]
   entry_points:
     - cellpy=cellpy.cli:cli
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
-  build:
-    - python
   host:
     - python
     - pip
-    - setuptools >62
+    # build-system from pyproject.toml (linter wants an explicit backend)
+    - hatchling >=1.27
+    - uv-dynamic-versioning >=0.7.0
   run:
     - python
+    # PyPI [project.dependencies] (conda names)
+    - cellpycore ==0.2.1
+    - charset-normalizer
     - click
     - cookiecutter >=2.1
+    - dateparser
+    - defusedxml
     - fabric >=3.1
-    - hdf5 >=1.14
-    - lmfit >=1.2
+    - jinja2-time
     - matplotlib-base >=3.7
     - numpy >=1.24
     - openpyxl >=3.1.1
-    - pandas >=2.0.1
+    - pandas >=3.0.3,<4
     - pint >=0.20
-    - pip >=23.1
+    - platformdirs >=4.10.0
+    - polars
+    - pyarrow >=16
+    - pydantic-settings >=2.14.2
+    - pygithub >=2.2.0
     - pyodbc >=4.0
-    - pytables >=3.8
     - python-box >=7.0
     - python-dotenv >=1.0.1
+    - python-isal
+    - pytables >=3.8
+    - requests
     - rich >=13.5
     - ruamel.yaml >=0.17.21
     - scipy >=1.10.1
     - setuptools >=67.7
-    - sqlalchemy >=2.0.11
+    - sqlalchemy >=2.0.0
     - tqdm >=4.65
-    - xlrd >=2.0.1
+    - typer
+    - xmltodict
+    - sqlalchemy-access >=2.0.2  # [win]
+    # Conda UX extras historically bundled with cellpy (optional on PyPI)
+    - hdf5 >=1.14
     - ipykernel >=6.29.0
     - ipython >=8.18.1
     - ipywidgets >=8.1.1
     - jupyterlab >=4.1
+    - lmfit >=1.2
     - plotly >=5.18.0
-    - pygithub >=2.2.0
-    - python-kaleido >0.1.0
-    - sqlalchemy-access >=2.0.2  # [win]
+    - python-kaleido >=0.1.0,<1.4
+    - seaborn
+    - xlrd >=2.0.1
 
 test:
   imports:
     - cellpy
+    - cellpycore
   commands:
     - cellpy --help
+    - cellpy info --version
 
 about:
   home: https://github.com/jepegit/cellpy
